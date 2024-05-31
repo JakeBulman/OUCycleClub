@@ -1,25 +1,29 @@
 /* EMA OU Cycle Club Admin Site */
 
-main {
+.container {
     /* Main gris setup */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr;
     grid-gap: 1rem;
     height: 30px;
 }
 
-section {
-    /* To make sizing easier, include borders or padding in width */
-    box-sizing: border-box;
-}
-
-section.button button {
+a {
     /* Set button width to fill and height to set amount */
     width: 100%;
-    height: 100px;
+    height: 100%;
     /* Do not add border to width (else it will be over 100%) */
+    display: flex;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.page-content {
+    grid-row-start: 2;
+    grid-column: span 5;
 }
 
 /* Style page heading */
