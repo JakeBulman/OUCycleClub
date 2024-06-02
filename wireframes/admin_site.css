@@ -54,9 +54,10 @@ a {
 
 input {
     display: block;
-    width: 100%;
-    
+    width: 100%; 
+    text-align: center;
 }
+
 label {
     display: block;
     width: 100%;
@@ -64,8 +65,12 @@ label {
     text-align: center;
 }
 
-/* Style page heading */
 h1 {
     font-size: 1.4rem;
+    text-align: center;
+}
+
+select {
+    width: 100%;
     text-align: center;
 }

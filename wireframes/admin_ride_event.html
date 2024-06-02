@@ -19,38 +19,36 @@
           <label for="ride type">Type of Ride:</label>
           <input type="text" id="ride type" name="ride type"></input>
           <label for="ride date">Date of Ride:</label>
-          <input type="text" id="ride date" name="ride date"></input>
+          <input type="date" id="ride date" name="ride date"></input>
           <label for="ride start time">Start Time:</label>
-          <input type="text" id="ride start time" name="ride start time"></input>
+          <input type="time" id="ride start time" name="ride start time"></input>
           <label for="ride duration">Duration:</label>
           <input type="text" id="ride duration" name="ride duration"></input>
           <label for="ride meeting point">Meeting Point:</label>
           <input type="text" id="ride meeting point" name="ride meeting point"></input>
           <label for="ride distance">Distance in km:</label>
-          <input type="text" id="ride distance" name="ride distance"></input>
+          <input type="number" id="ride distance" name="ride distance"></input>
           <label for="ride elevation">Elevation in m:</label>
-          <input type="text" id="ride elevation" name="ride elevation"></input>
+          <input type="number" id="ride elevation" name="ride elevation"></input>
           <label for="ride size">Maximum Group Size:</label>
-          <input type="text" id="ride size" name="ride size"></input>
+          <input type="number" id="ride size" name="ride size"></input>
           <label for="ride leader">Name of Leader:</label>
           <input type="text" id="ride leader" name="ride leader"></input>
           <label for="ride contact">Contact Number:</label>
-          <input type="text" id="ride contact" name="ride contact"></input>
+          <input type="tel" id="ride contact" name="ride contact"></input>
           <label for="ride contact2">Alternative Contact Number:</label>
-          <input type="text" id="ride contact2" name="ride contact2"></input>
+          <input type="tel" id="ride contact2" name="ride contact2"></input>
           <label for="ride comments">Comments:</label>
           <input type="text" id="ride comments" name="ride comments"></input>
           <label for="ride status">Status:</label>
-          <input disabled type="text" id="ride status" name="ride status" value="Proposed"></input>
+          <select id="ride status" name="ride status">
+            <option value="proposed" selected>Proposed</option>
+            <option value="approved">Approved</option>
+            <option value="rejected">Rejected</option>
+          </select>
         </form>
         <section>
           <button class="large-button">Save Edits</button>
-        </section>
-        <section>
-          <button class="large-button">Approve Ride</button>
-        </section>
-        <section >
-          <button class="large-button">Reject Ride</button>
         </section>
       </div>
     </div>

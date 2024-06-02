@@ -11,7 +11,65 @@
     <div class="container">
       <a class="button" href='admin_homepage.html'><span>Homepage</span></a>
       <div class="page-content">
-        <h1>Test</h1>
+        <h1>Member Details</h1>
+        <form>
+          <label for="forename">Forename:</label>
+          <input type="text" id="forename" name="forename"></input>
+          <label for="surname">Surname:</label>
+          <input type="text" id="surname" name="surname"></input>
+          <label for="gender">Gender:</label>
+          <input type="text" id="gender" name="gender"></input>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob"></input>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email"></input>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone"></input>
+          <label for="address">Home Address:</label>
+          <input type="text" id="address" name="address"></input>
+          <label for="EC name">Emergency Contact Name:</label>
+          <input type="text" id="EC name" name="EC name"></input>
+          <label for="EC number">Emergency Contact Number:</label>
+          <input type="tel" id="EC number" name="EC number"></input>
+          <label for="password">Account Password:</label>
+          <input type="password" id="password" name="password"></input>
+          <label for="membership option radio">Membership Option:</label>
+          <select id="membership option" name="membership option">
+            <option value="standard" selected>Standard</option>
+            <option value="student">Student</option>
+            <option value="senior">Senior</option>
+          </select>
+          <label for="payment method">Preferred Payment Method:</label>
+          <select id="payment method" name="payment method">
+            <option value="card" selected>Card</option>
+            <option value="paypal">Paypal</option>
+            <option value="cash">Cash</option>
+          </select>
+          <label for="renewal">Automatic Renewal:</label>
+          <select id="renewal" name="renewal">
+            <option value="yes" selected>Yes</option>
+            <option value="no">No</option>
+          </select>
+          <label for="consent">Anouncements Consent:</label>
+          <select id="consent" name="consent">
+            <option value="yes" selected>Yes</option>
+            <option value="no">No</option>
+          </select>
+          <label for="active">Account Active:</label>
+          <select id="active" name="active">
+            <option value="active" selected>Active</option>
+            <option value="inactive">Inactive</option>
+          </select>
+          <label for="status">Membership Status:</label>
+          <select id="status" name="status">
+            <option value="pending" selected>Pending</option>
+            <option value="accepted">Accepted</option>
+            <option value="rejected">Rejected</option>
+          </select>
+        </form>
+        <section>
+          <button class="large-button">Save Edits</button>
+        </section>
       </div>
     </div>
   </body>
