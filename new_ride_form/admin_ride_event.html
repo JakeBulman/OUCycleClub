@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Events</title>
+    <link rel="stylesheet" href="admin_site.css">
+    <!-- <script src="script.js"></script> -->
+  </head>
+  <body>
+    <h1>Ride Events</h1>
+    <div class="container">
+      <div class = 'links'>
+        <a class="button" href='#'><span>Homepage</span></a>
+        <a class="button" href='#'><span>Ride Events</span></a>
+      </div>
+      <div class="page-content">
+        <img src="static_files/BarBlack.jpg" alt="">
+        <h1>Ride Details</h1>
+        <form action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+          <label for="ride_name">Name of Ride:</label>
+          <input type="text" id="ride_name" name="ride_name">
+          <label for="ride_type">Type of Ride:</label>
+          <input type="text" id="ride_type" name="ride_type">
+          <label for="ride_date">Date of Ride:</label>
+          <input type="date" id="ride_date" name="ride_date">
+          <label for="ride_start_time">Start Time:</label>
+          <input type="time" id="ride_start_time" name="ride_start_time">
+          <label for="ride_duration">Duration:</label>
+          <input type="text" id="ride_duration" name="ride_duration">
+          <label for="ride_meeting_point">Meeting Point:</label>
+          <input type="text" id="ride_meeting point" name="ride_meeting_point">
+          <label for="ride_distance">Distance in km:</label>
+          <input type="number" id="ride_distance" name="ride_distance">
+          <label for="ride_elevation">Elevation in m:</label>
+          <input type="number" id="ride_elevation" name="ride_elevation">
+          <label for="ride_size">Maximum Group Size:</label>
+          <input type="number" id="ride_size" name="ride_size">
+          <label for="ride_leader">Name of Leader:</label>
+          <input type="text" id="ride_leader" name="ride_leader">
+          <label for="ride contact">Contact Number:</label>
+          <input type="tel" id="ride_contact" name="ride_contact">
+          <label for="ride_contact2">Alternative Contact Number:</label>
+          <input type="tel" id="ride_contact2" name="ride_contact2">
+          <label for="ride_comments">Comments:</label>
+          <input type="text" id="ride_comments" name="ride_comments">
+          <label for="ride_status">Status:</label>
+          <select id="ride_status" name="ride_status">
+            <option value="proposed" selected>Proposed</option>
+            <option value="approved">Approved</option>
+            <option value="rejected">Rejected</option>
+          </select>
+          <input type="hidden" id="SessionIdentifier" name="SessionIdentifier" value="ff53-dd45-dcba9876-9090">
+          <input class="large-button" type="submit" value="Save Edits"></button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
