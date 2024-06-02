@@ -11,7 +11,47 @@
     <div class="container">
       <a class="button" href='admin_homepage.html'><span>Homepage</span></a>
       <div class="page-content">
-        <h1>Test</h1>
+        <h1>Announcement Details</h1>
+        <form>
+          <label for="headline">Email Subject:</label>
+          <input type="text" id="headline" name="headline"></input>
+          <label for="content">Email Body:</label>
+          <input type="text" id="content" name="content" maxlength="200"></input>
+          <label for="author">Author:</label>
+          <input disabled type="text" id="author" name="author" value="Current User Variable"></input>
+          <label for="datefrom">Send Date:</label>
+          <input type="date" id="datefrom" name="datefrom"></input>
+          <label for="timefrom">Send Time:</label>
+          <input type="time" id="timefrom" name="timefrom"></input>
+          <label for="attachment">Attachements:</label>
+          <input type="file" id="attachment" name="attachment"></input>
+          <label for="status">Priority:</label>
+          <select id="priority" name="priority">
+            <option value="low" >Low</option>
+            <option value="normal" selected>Normal</option>
+            <option value="high">High</option>
+          </select>
+        </form>
+        <section>
+          <button class="large-button">Schedule Announcement</button>
+        </section>
+      </div>
+      <div class="page-news">
+        <h2>Posted Announcements</h2>
+        <div class="news-item">
+          <h4>Email Subject 1</h4>
+          <p>Aliquam justo nunc, tempus id tristique at, pretium non massa! Integer aliquet, ligula sit amet aliquam vehicula, arcu urna laoreet augue, ac tincidunt magna felis sed libero. Vestibulum sed dapibus neque. Nulla quis dolor justo. Curabitur eros leo, tempor quis viverra in, bibendum ac ligula. Aliquam orci sapien, ullamcorper in euismod ut, luctus pharetra lorem. Vestibulum non augue vel nunc rutrum aliquam.</p>
+          <p>By "Author" at 01/01/2024 10:00</p>
+          <button>Edit</button>
+          <button>Delete</button>
+        </div>
+        <div class="news-item">
+          <h4>Email Subject 2</h4>
+          <p>Aliquam justo nunc, tempus id tristique at, pretium non massa! Integer aliquet, ligula sit amet aliquam vehicula, arcu urna laoreet augue, ac tincidunt magna felis sed libero. Vestibulum sed dapibus neque. Nulla quis dolor justo. Curabitur eros leo, tempor quis viverra in, bibendum ac ligula. Aliquam orci sapien, ullamcorper in euismod ut, luctus pharetra lorem. Vestibulum non augue vel nunc rutrum aliquam.</p>
+          <p>By "Author" at 15/01/2024 21:30</p>
+          <button>Edit</button>
+          <button>Delete</button>
+        </div>
       </div>
     </div>
   </body>
